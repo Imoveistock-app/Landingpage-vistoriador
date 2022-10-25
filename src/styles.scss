@@ -344,6 +344,12 @@ input:focus {
     left: -70px;
 }
 
+.negative-top-70 {
+    top: -70px;
+}
+.right-0{
+    right: 0;
+}
 .swiper-button-prev,
 .swiper-button-next {
     background: black;
@@ -459,6 +465,9 @@ input:focus {
 
     // tools
 
+    .pop-up{
+        display: none;
+    }
     .row-process-sub {
         background: #542FDF;
         height: 1104px;
@@ -602,6 +611,7 @@ input:focus {
         background-color: #542FDF !important;
         padding: 43px 23px 43px 23px !important;
         color: white !important;
+        max-width: 100% !important;
     }
 
     .card-form-register-header {
