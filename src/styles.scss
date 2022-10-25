@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 @import "bootstrap-icons/font/bootstrap-icons.scss";
 
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
 * {
     margin: 0;
     padding: 0;
@@ -54,10 +58,8 @@ input:focus {
 
 .bg-header {
     background-image: url(./assets/image/img-header.png) !important;
-    background-position: left !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    height: 80vh !important;
 }
 
 .navbarCustom {
@@ -88,14 +90,14 @@ input:focus {
 }
 
 .card-header-purple {
-    background-color: #542FDF !important;
     max-width: 671.52px !important;
-    padding: 73px !important;
+    padding: 53px !important;
     color: white !important;
 }
 
+
 .custom-content-header {
-    min-height: calc(100vh - 117px) !important;
+    min-height: calc(79vh - 117px) !important;
 }
 
 .card-form-register-header {
@@ -262,16 +264,120 @@ input:focus {
     max-width: 52px !important;
 }
 
-.img-aboute-mobile {
+// tool´S
+.img-partner-mobile {
     display: none !important;
 }
 
-.btn-want-to-be-part {
-    background: #FEFFFF;
+.text-align-center {
+    text-align: -webkit-center;
+}
+
+.text-align-right {
+    text-align: -webkit-right;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-26 {
+    font-size: 26px;
+}
+
+.font-size-44 {
+    font-size: 44px;
+}
+
+.font-size-48 {
+    font-size: 48px;
+}
+
+.btn-process-sub {
+    background: white;
     border-radius: 9px;
     height: 71px;
-    width: 60% !important;
     color: #542FDF !important;
+    font-weight: bolder !important;
+}
+
+.row-process-sub {
+    background: #542FDF;
+    height: 650px;
+}
+
+.line-18 {
+    line-height: 18px;
+}
+
+.bg-process-sub {
+    background-image: url(./assets/image/bg-process-sub.png);
+    background-size: cover !important;
+    height: 650px;
+    background-repeat: no-repeat !important;
+}
+
+.border-08 {
+    border-radius: 8px;
+}
+
+.bg-swiper-page {
+    background-image: url(./assets/image/bg-swiper-page.png);
+    background-size: cover !important;
+    height: 650px;
+    background-repeat: no-repeat !important;
+}
+
+.img-guy-swippe {
+    max-width: 350px;
+}
+
+.ng-swiper {
+    margin-top: 135px;
+}
+
+.card-swiper {
+    max-width: 500px;
+}
+
+.negative-left-70 {
+    left: -70px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background: black;
+    border-radius: 100px;
+    padding: 0 22px;
+}
+
+.swiper-button-next {
+    left: 453px;
+    top: 400px;
+}
+
+.swiper-button-prev {
+    top: 400px;
+    left: 383px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+    color: white;
+}
+.d-none{
+    display: none;
+}
+
+
+
+
+.btn-see-surveyor-desktop {
+    background: #542FDF;
+    border-radius: 9px;
+    height: 71px;
+    color: white !important;
     font-weight: bolder !important;
 }
 
@@ -310,7 +416,6 @@ input:focus {
     background-image: url(./assets/image/homem.png);
     background-repeat: no-repeat !important;
     background-size: cover;
-    background-position: center !important;
     height: 75vh !important;
 }
 
@@ -321,14 +426,6 @@ input:focus {
     border-right: 1px solid #C8C9CA !important;
     border-bottom: 1px solid #C8C9CA !important;
     border-radius: 3px !important;
-}
-
-.bg-two-peoples {
-    background-image: url(./assets/image/duas-pessoas.png);
-    background-size: cover !important;
-    background-position: top !important;
-    background-repeat: no-repeat !important;
-    height: 100vh !important;
 }
 
 .div-advertise-custom2 {
@@ -359,17 +456,72 @@ input:focus {
 }
 
 @media (max-width: 991px) {
+
+    // tools
+    .row-process-sub {
+        background: #542FDF;
+        height: 1104px;
+    }
+
+    .col-process-sub {
+        padding-right: 15px !important;
+    }
+
+
+    .row-swiper-desktop{
+        display: none !important;
+
+    }
+    .row-swiper-mobile{
+        display: block !important;
+
+    }
+    .card-swiper{
+        height: 450px;
+    }
+    .img-face-guy-swipper{
+        position: absolute;
+        right: 39px;
+        top: -100px;
+        z-index: 10;
+        max-width: 157px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: white;
+        border-radius: 100px;
+        padding: 0 22px;
+    }
+
+    .swiper-button-next {
+        left: 85% !important;
+        top: 485px !important;
+    }
+
+    .swiper-button-prev {
+        top: 485px !important;
+        left: 65% !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 20px !important;
+        color: black;
+    }
+
+    .swiper {
+        height: 600px;
+        margin-top: 10rem;
+    }
+    .bg-swiper-page{
+        height: 800px;
+    }
+
     .header-component-customer {
         height: fit-content !important;
     }
 
-    .bg-two-peoples {
-        background-image: url(./assets/image/duas-pessoas.png);
-        background-size: cover !important;
-        background-position: top !important;
-        background-repeat: no-repeat !important;
-        height: 400px !important;
-    }
+
 
     .bg-payment-detail {
         background-image: url(./assets/image/homem.png);
@@ -400,11 +552,11 @@ input:focus {
         background-repeat: no-repeat !important;
     }
 
-    .img-aboute-desktop {
+    .img-partner-desktop {
         display: none !important;
     }
 
-    .img-aboute-mobile {
+    .img-partner-mobile {
         display: block !important;
         margin-bottom: 56px !important;
     }
@@ -430,7 +582,7 @@ input:focus {
 
     .bg-header-mobile {
         background-image: url(./assets/image/img-header.png) !important;
-        background-position: bottom !important;
+        background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         min-height: 25vh !important;
@@ -442,13 +594,11 @@ input:focus {
     }
 
     .custom-content-header {
-        min-height: 100vh !important;
         flex-direction: column-reverse !important;
     }
 
     .card-header-purple {
         background-color: #542FDF !important;
-        min-width: 100vw !important;
         padding: 43px 23px 43px 23px !important;
         color: white !important;
     }
@@ -583,10 +733,6 @@ input:focus {
 
     .text-make-your-registration-first {
         min-height: auto !important;
-    }
-
-    .coluna-want-to-be-part {
-        flex-direction: column-reverse !important;
     }
 
     .bg-indicate-desktop {
