@@ -75,10 +75,6 @@ input:focus {
     height: 51px !important;
 }
 
-.bg-about {
-    background-color: #F0F1F3 !important;
-    background-size: cover !important;
-}
 
 .margin-about-component {
     padding-top: 200px !important;
@@ -136,70 +132,6 @@ input:focus {
     display: none !important;
 }
 
-.btn-take-part {
-    background-color: #542FDF !important;
-    color: white !important;
-    border-radius: 9px !important;
-    height: 71px !important;
-    width: 360px !important;
-    font-size: 18px !important;
-    margin-top: 80px !important;
-}
-
-.card-data-about {
-    background-color: #542FDF !important;
-    color: white !important;
-    max-width: 380px !important;
-    padding: 80px 40px 80px 40px !important;
-    position: absolute !important;
-    bottom: -300px !important;
-    left: 100px !important;
-}
-
-.margin-top-indicate {
-    margin-top: 25rem !important;
-}
-
-.padding-indicate-right {
-    padding-left: 10rem !important;
-}
-
-.agregate-images-indicate {
-    position: absolute;
-    bottom: 109px !important;
-    left: -100px !important;
-}
-
-.bg-indicate-desktop {
-    background-image: url(./assets/image/img-indicate.png);
-    background-size: cover !important;
-    background-position: left !important;
-    height: 100vh !important;
-    background-repeat: no-repeat !important;
-}
-
-.img-agregate-1 {
-    background-image: url(./assets/image/first-img-indicate.svg);
-    background-size: cover;
-    height: 15rem !important;
-    width: 15rem !important;
-}
-
-.img-agregate-2 {
-    background-image: url(./assets/image/second-img-indicate.svg);
-    background-size: cover;
-    height: 15rem !important;
-    width: 15rem !important;
-    margin-left: 20px !important;
-}
-
-.img-agregate-3 {
-    background-image: url(./assets/image/third-img-indicate.svg);
-    background-size: cover;
-    height: 15rem !important;
-    width: 15rem !important;
-    margin-left: 20px !important;
-}
 
 .bg-make-yout-registration {
     background-color: #542FDF !important;
@@ -221,20 +153,6 @@ input:focus {
     margin-top: 30px !important;
 }
 
-.bg-indicate-now {
-    background-image: url(./assets/image/image-family.png);
-    background-size: cover !important;
-    background-position: center !important;
-    height: 100vh !important;
-}
-
-.btn-indique-agora {
-    height: 60px !important;
-    background: #542FDF;
-    border-radius: 9px;
-    width: 200px !important;
-    color: white !important;
-}
 
 .bg-commom-question {
     background-color: #231F20;
@@ -387,79 +305,13 @@ input:focus {
     font-weight: bolder !important;
 }
 
-.agregate-images-want-to-be-part {
-    position: absolute !important;
-    display: flex !important;
-    bottom: -50px !important;
-    right: 0px !important;
-}
 
-.bg-why-advertise {
-    background-image: url(./assets/image/mulher.png);
-    background-size: cover !important;
-    height: 100vh !important;
-    background-repeat: no-repeat !important;
-    background-position: top !important;
-}
 
-.margin-top-why-advertise {
-    margin-top: 200px !important;
-}
-
-.bg-purple-want-to-be-part {
-    background-color: #542FDF !important;
-}
-
-.img-mobile-want-to-be-part {
-    display: none !important;
-}
 
 .bg-indicate-mobile {
     display: none !important;
 }
 
-.bg-payment-detail {
-    background-image: url(./assets/image/homem.png);
-    background-repeat: no-repeat !important;
-    background-size: cover;
-    height: 75vh !important;
-}
-
-.div-advertise-custom1 {
-    border-left: 10px solid #3F58B7 !important;
-    padding: 30px 10px 30px 10px !important;
-    border-top: 1px solid #C8C9CA !important;
-    border-right: 1px solid #C8C9CA !important;
-    border-bottom: 1px solid #C8C9CA !important;
-    border-radius: 3px !important;
-}
-
-.div-advertise-custom2 {
-    border-left: 10px solid black !important;
-    padding: 30px 10px 30px 10px !important;
-    border-top: 1px solid #C8C9CA !important;
-    border-right: 1px solid #C8C9CA !important;
-    border-bottom: 1px solid #C8C9CA !important;
-    border-radius: 3px !important;
-}
-
-.div-advertise-custom3 {
-    border-left: 10px solid #32572B !important;
-    padding: 30px 10px 30px 10px !important;
-    border-top: 1px solid #C8C9CA !important;
-    border-right: 1px solid #C8C9CA !important;
-    border-bottom: 1px solid #C8C9CA !important;
-    border-radius: 3px !important;
-}
-
-.btn-want-to-be-part2 {
-    background: #542FDF !important;
-    border-radius: 9px !important;
-    height: 71px !important;
-    width: 70% !important;
-    color: white !important;
-    font-weight: bold !important;
-}
 
 @media (max-width: 991px) {
 
@@ -532,35 +384,6 @@ input:focus {
     }
 
 
-
-    .bg-payment-detail {
-        background-image: url(./assets/image/homem.png);
-        background-repeat: no-repeat !important;
-        background-size: cover;
-        background-position: center !important;
-        height: 400px !important;
-    }
-
-    .bg-why-advertise {
-        background-image: url(./assets/image/mulher.png);
-        background-size: cover !important;
-        height: 400px !important;
-        background-repeat: no-repeat !important;
-        background-position: top !important;
-    }
-
-    .margin-top-why-advertise {
-        margin-top: 0px !important;
-    }
-
-    .bg-indicate-mobile {
-        background-image: url(./assets/image/img-indicate.png);
-        display: block !important;
-        background-size: cover !important;
-        background-position: top !important;
-        height: 400px !important;
-        background-repeat: no-repeat !important;
-    }
 
     .img-partner-desktop {
         display: none !important;
@@ -684,142 +507,16 @@ input:focus {
         margin-top: 80px !important;
     }
 
-    .margin-about-component {
-        padding-top: 100px !important;
-        padding-bottom: 100px !important;
-    }
-
-    .padding-indicate-right {
-        padding-left: 15px !important;
-    }
-
-    .img-agregate {
-        background: none !important;
-    }
-
-    .agregate-images-indicate {
-        position: absolute;
-        bottom: -100px !important;
-        left: -5rem !important;
-    }
-
-    .img-agregate-1 {
-        background-image: url(./assets/image/first-img-indicate.svg);
-        background-size: cover;
-        height: 15rem !important;
-        width: 15rem !important;
-    }
-
-    .img-agregate-2 {
-        background-image: url(./assets/image/second-img-indicate.svg);
-        background-size: cover;
-        height: 15rem !important;
-        width: 15rem !important;
-        margin-left: 20px !important;
-    }
-
-    .img-agregate-3 {
-        background-image: url(./assets/image/third-img-indicate.svg);
-        background-size: cover;
-        height: 15rem !important;
-        width: 15rem !important;
-        margin-left: 20px !important;
-    }
-
-    .margin-top-indicate {
-        margin-top: 60px !important;
-    }
-
     .bg-make-yout-registration {
         background-color: #542FDF !important;
         height: fit-content !important;
         margin-top: 100px !important;
         padding-top: 100px !important;
         padding-bottom: 100px !important;
-    }
-
-    .btn-locale-indicate-now {
-        justify-content: center !important;
-    }
-
-    .text-make-your-registration-first {
-        min-height: auto !important;
-    }
-
-    .bg-indicate-desktop {
-        background-image: none !important;
-        display: none !important;
-    }
-
-    .img-mobile-want-to-be-part {
-        display: block !important;
-        background-size: cover !important;
-        width: 100% !important;
-        height: max-content !important;
-    }
 
 }
-
-@media (max-width: 768px) {
-
-    .btn-want-to-be-part {
-        background: #FEFFFF;
-        border-radius: 9px;
-        height: 71px;
-        width: 100% !important;
-        color: #542FDF !important;
-        font-weight: bolder !important;
-    }
-
-    .btn-want-to-be-part2 {
-        background: #542FDF !important;
-        border-radius: 9px !important;
-        height: 71px !important;
-        width: 100% !important;
-        color: white !important;
-        font-weight: bold !important;
-    }
-
-    .custom-justify-content-why-advertize {
-        flex-direction: column !important;
-        justify-content: center !important;
-        text-align: center !important;
-    }
-
-    .margin-top-indicate {
-        margin-top: 60px !important;
-        flex-direction: column-reverse !important;
-    }
-
-    .agregate-images-indicate {
-        position: absolute;
-        bottom: -20px !important;
-        left: -1rem !important;
-    }
-
-    .img-agregate-1 {
-        background-image: url(./assets/image/first-img-indicate.svg);
-        background-size: cover;
-        height: 8rem !important;
-        width: 8rem !important;
-    }
-
-    .img-agregate-2 {
-        background-image: url(./assets/image/second-img-indicate.svg);
-        background-size: cover;
-        height: 8rem !important;
-        width: 8rem !important;
-        margin-left: 10px !important;
-    }
-
-    .img-agregate-3 {
-        background-image: url(./assets/image/third-img-indicate.svg);
-        background-size: cover;
-        height: 8rem !important;
-        width: 8rem !important;
-        margin-left: 10px !important;
-    }
 }
+
 
 @media (max-width: 400px) {
     // TOOLS
@@ -829,27 +526,5 @@ input:focus {
     .col-why{
         max-width: 100% !important;
         margin-top: 1.5rem;
-    }
-    .img-agregate-1 {
-        background-image: url(./assets/image/first-img-indicate.svg);
-        background-size: cover;
-        height: 5rem !important;
-        width: 5rem !important;
-    }
-
-    .img-agregate-2 {
-        background-image: url(./assets/image/second-img-indicate.svg);
-        background-size: cover;
-        height: 5rem !important;
-        width: 5rem !important;
-        margin-left: 10px !important;
-    }
-
-    .img-agregate-3 {
-        background-image: url(./assets/image/third-img-indicate.svg);
-        background-size: cover;
-        height: 5rem !important;
-        width: 5rem !important;
-        margin-left: 10px !important;
-    }
+    }   
 }
