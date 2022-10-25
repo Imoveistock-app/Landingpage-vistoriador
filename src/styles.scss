@@ -458,6 +458,7 @@ input:focus {
 @media (max-width: 991px) {
 
     // tools
+
     .row-process-sub {
         background: #542FDF;
         height: 1104px;
@@ -811,6 +812,14 @@ input:focus {
 }
 
 @media (max-width: 400px) {
+    // TOOLS
+    .row-why{
+        display: block !important;
+    }
+    .col-why{
+        max-width: 100% !important;
+        margin-top: 1.5rem;
+    }
     .img-agregate-1 {
         background-image: url(./assets/image/first-img-indicate.svg);
         background-size: cover;

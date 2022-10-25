@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WantToBePartComponent } from './want-to-be-part.component';
+import { ProcessSubComponent } from './process-sub.component';
 
-describe('WantToBePartComponent', () => {
-  let component: WantToBePartComponent;
-  let fixture: ComponentFixture<WantToBePartComponent>;
+describe('ProcessSubComponent', () => {
+  let component: ProcessSubComponent;
+  let fixture: ComponentFixture<ProcessSubComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WantToBePartComponent ]
+      declarations: [ ProcessSubComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WantToBePartComponent);
+    fixture = TestBed.createComponent(ProcessSubComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

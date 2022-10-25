@@ -6,16 +6,15 @@ SwiperCore.use([
   Pagination, 
 ]);
 @Component({
-  selector: 'app-indicate-now',
-  templateUrl: './indicate-now.component.html',
-  styleUrls: ['./indicate-now.component.scss']
+  selector: 'app-card-swiper',
+  templateUrl: './card-swiper.component.html',
+  styleUrls: ['./card-swiper.component.scss']
 })
-export class IndicateNowComponent implements OnInit {
+export class CardSwiperComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 
 }
