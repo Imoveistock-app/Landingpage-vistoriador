@@ -1,0 +1,81 @@
+<section class="container-fluid bg-swiper-page scrollIndicate">
+    <div class="row row-swiper-desktop pt-5 justify-content-center">
+        <div class="col-6  text-align-right px-0">
+            <img src="../../../assets/image/happy-guy.png" class="img-guy-swippe border-08"/>
+        </div>
+        <div class="col-6">
+            <swiper 
+            [slidesPerView]="1"
+            [spaceBetween]="50"
+            [navigation]="true"
+            class="h-100 negative-left-70"
+            >
+            <ng-template class="ng-swiper w-100" swiperSlide>
+                <div class="card card-swiper w-100 border-08 px-3 py-3 w3-black">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                    </p>
+                      <p class="">
+                        <b>- Paulo Trovatto</b>, Curitiba
+                      </p>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="ng-swiper w-100" swiperSlide>
+              <div class="card card-swiper w-100 border-08 px-3 py-3 w3-black">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                  </p>
+                    <p class="">
+                      <b>- Paulo Trovatto</b>, Curitiba
+                    </p>
+                  </div>
+              </div>
+          </ng-template>
+       
+
+          </swiper>
+        </div>
+    </div>
+    <div class="row d-none pt-5 row-swiper-mobile justify-content-center">
+        <div class="col-12">
+            <img src="../../../assets/image/happy-face-guy.png" class="img-face-guy-swipper border-08"/>
+            <swiper 
+            [slidesPerView]="1"
+            [spaceBetween]="50"
+            [navigation]="true"
+            class="w-100 bg-green swiper"
+            >
+          
+            <ng-template class="w-100" swiperSlide>
+                <div class="card card-swiper w-100 border-08 px-3 py-3 w3-black">
+                    <div class="card-body">
+                      <p class="card-text font-size-26">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                    </p>
+                      <p class="">
+                        <b>- Paulo Trovatto</b>, Curitiba
+                      </p>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template class="w-100" swiperSlide>
+                <div class="card card-swiper w-100 border-08 px-3 py-3 w3-black">
+                    <div class="card-body">
+                      <p class="card-text font-size-26">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                    </p>
+                      <p class="">
+                        <b>- Paulo Trovatto</b>, Curitiba
+                      </p>
+                    </div>
+                </div>
+            </ng-template>
+           
+
+          </swiper>
+        </div>
+    </div>
+</section>
