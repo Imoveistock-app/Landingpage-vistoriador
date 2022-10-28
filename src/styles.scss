@@ -1,0 +1,530 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans' !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #01FF5F !important;
+}
+
+
+select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+option:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button:focus,
+input:focus {
+    box-shadow: 0 0 0 0 !important;
+    outline: none !important;
+}
+
+.first-space-navbar {
+    background-color: #01FF5F !important;
+    padding-left: 194px !important;
+    display: flex !important;
+    align-items: center !important;
+    height: 117px !important;
+}
+
+.bg-header {
+    background-image: url(./assets/image/img-header.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.navbarCustom {
+    height: 117px !important;
+}
+
+.img-logo-name {
+    height: 35px !important;
+    margin-left: 40px !important;
+}
+
+.img-logo {
+    height: 51px !important;
+}
+
+
+.margin-about-component {
+    padding-top: 200px !important;
+    padding-bottom: 200px !important;
+}
+
+.card-left-about {
+    width: 522px !important;
+}
+
+.card-header-purple {
+    max-width: 671.52px !important;
+    padding: 53px !important;
+    color: white !important;
+}
+
+
+.custom-content-header {
+    min-height: calc(79vh - 117px) !important;
+}
+
+.card-form-register-header {
+    background-color: white !important;
+    border-radius: 5px !important;
+    padding: 49px 69px 49px 69px !important;
+    max-width: 476px !important;
+    max-height: 642px !important;
+    margin-top: 40px !important;
+}
+
+.input-register-custom {
+    background: #FEFFFF !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 9px !important;
+    height: 69px;
+    padding: 24px;
+}
+
+.btn-submit-register {
+    background-color: #542FDF !important;
+    color: white !important;
+    border-radius: 9px !important;
+    height: 71px !important;
+    width: 100% !important;
+    font-size: 18px !important;
+}
+
+.message-header {
+    color: white !important;
+    font-size: 24px;
+    line-height: 28px !important;
+}
+
+.bg-message-header-mobile {
+    display: none !important;
+}
+
+
+.bg-make-yout-registration {
+    background-color: #542FDF !important;
+    height: fit-content !important;
+    padding: 200px 40px 200px 40px !important;
+    margin-top: 100px !important;
+}
+
+.card-make-your-registration {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 45px 27px 45px 27px;
+    width: 100% !important;
+}
+
+.faca-seu-cadastro-text {
+    color: #542FDF !important;
+    margin-top: 30px !important;
+}
+
+
+.bg-commom-question {
+    background-color: #231F20;
+    height: fit-content !important;
+    padding: 131px 20px 131px 20px !important;
+}
+
+.div-line-common-question {
+    border-bottom: 1px solid gray;
+    margin-top: 31px !important;
+}
+
+.space-footer {
+    padding-top: 97px !important;
+}
+
+.div-line-footer {
+    border-bottom: 1px solid #B0B1B4 !important;
+    margin: 25px 0px 25px 0px;
+}
+
+.text-make-your-registration-first {
+    min-height: 191px !important;
+}
+
+.icon-aboute-right {
+    max-width: 52px !important;
+}
+
+// tool´S
+.img-partner-mobile {
+    display: none !important;
+}
+
+.text-align-center {
+    text-align: -webkit-center;
+}
+
+.text-align-right {
+    text-align: -webkit-right;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-26 {
+    font-size: 26px;
+}
+
+.font-size-44 {
+    font-size: 44px;
+}
+
+.font-size-48 {
+    font-size: 48px;
+}
+
+.btn-process-sub {
+    background: white;
+    border-radius: 9px;
+    height: 71px;
+    color: #542FDF !important;
+    font-weight: bolder !important;
+}
+
+.row-process-sub {
+    background: #542FDF;
+    height: 650px;
+}
+
+.line-18 {
+    line-height: 18px;
+}
+
+.bg-process-sub {
+    background-image: url(./assets/image/bg-process-sub.png);
+    background-size: cover !important;
+    height: 650px;
+    background-repeat: no-repeat !important;
+}
+
+.border-08 {
+    border-radius: 8px;
+}
+
+.bg-swiper-page {
+    background-image: url(./assets/image/bg-swiper-page.png);
+    background-size: cover !important;
+    height: 650px;
+    background-repeat: no-repeat !important;
+}
+
+.img-guy-swippe {
+    max-width: 350px;
+}
+
+.ng-swiper {
+    margin-top: 135px;
+}
+
+.card-swiper {
+    max-width: 500px;
+}
+
+.negative-left-70 {
+    left: -70px;
+}
+
+.negative-top-70 {
+    top: -70px;
+}
+.right-0{
+    right: 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    background: black;
+    border-radius: 100px;
+    padding: 0 22px;
+}
+
+.swiper-button-next {
+    left: 453px;
+    top: 400px;
+}
+
+.swiper-button-prev {
+    top: 400px;
+    left: 383px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+    color: white;
+}
+.d-none{
+    display: none;
+}
+
+
+
+
+.btn-see-surveyor-desktop {
+    background: #542FDF;
+    border-radius: 9px;
+    height: 71px;
+    color: white !important;
+    font-weight: bolder !important;
+}
+
+
+
+
+.bg-indicate-mobile {
+    display: none !important;
+}
+
+
+@media (max-width: 991px) {
+
+    // tools
+
+    .pop-up{
+        display: none;
+    }
+    .row-process-sub {
+        background: #542FDF;
+        height: 1104px;
+    }
+
+    .col-process-sub {
+        padding-right: 15px !important;
+    }
+
+
+    .row-swiper-desktop{
+        display: none !important;
+
+    }
+    .row-swiper-mobile{
+        display: block !important;
+
+    }
+    .card-swiper{
+        height: 450px;
+    }
+    .img-face-guy-swipper{
+        position: absolute;
+        right: 39px;
+        top: -100px;
+        z-index: 10;
+        max-width: 157px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: white;
+        border-radius: 100px;
+        padding: 0 22px;
+    }
+
+    .swiper-button-next {
+        left: 85% !important;
+        top: 485px !important;
+    }
+
+    .swiper-button-prev {
+        top: 485px !important;
+        left: 65% !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 20px !important;
+        color: black;
+    }
+
+    .swiper {
+        height: 600px;
+        margin-top: 10rem;
+    }
+    .bg-swiper-page{
+        height: 800px;
+    }
+
+    .header-component-customer {
+        height: fit-content !important;
+    }
+
+
+
+    .img-partner-desktop {
+        display: none !important;
+    }
+
+    .img-partner-mobile {
+        display: block !important;
+        margin-bottom: 56px !important;
+    }
+
+    .first-space-navbar {
+        background-color: #01FF5F !important;
+        padding-left: 50px !important;
+        max-height: 60px !important;
+    }
+
+    .navbarCustom {
+        max-height: 60px !important;
+    }
+
+    .img-logo-name {
+        height: 20px !important;
+        margin-left: 15px !important;
+    }
+
+    .img-logo {
+        height: 30px !important;
+    }
+
+    .bg-header-mobile {
+        background-image: url(./assets/image/img-header.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        min-height: 25vh !important;
+        width: 100% !important;
+    }
+
+    .bg-header {
+        background-image: none !important;
+    }
+
+    .custom-content-header {
+        flex-direction: column-reverse !important;
+    }
+
+    .card-header-purple {
+        background-color: #542FDF !important;
+        padding: 43px 23px 43px 23px !important;
+        color: white !important;
+        max-width: 100% !important;
+    }
+
+    .card-form-register-header {
+        background-color: white !important;
+        border-radius: 5px !important;
+        padding: 37px 20px 37px 20px !important;
+        max-width: 476px !important;
+        margin-top: 0px !important;
+    }
+
+    .bg-message-header {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    .input-register-custom {
+        background: #FEFFFF !important;
+        border: 1px solid rgba(0, 0, 0, 0.2) !important;
+        border-radius: 9px !important;
+        height: 53px;
+        padding: 24px;
+    }
+
+    .btn-submit-register {
+        background-color: #542FDF !important;
+        color: white !important;
+        border-radius: 9px !important;
+        height: 60px !important;
+        width: 100% !important;
+        font-size: 18px !important;
+    }
+
+
+    .message-header-mobile {
+        color: white !important;
+        font-size: 12.05px;
+        line-height: 13.14px !important;
+    }
+
+    .display-desktop {
+        display: none !important;
+    }
+
+    .card-data-about-mobile {
+        background-color: #542FDF !important;
+        color: white !important;
+        max-width: 400px !important;
+        padding: 60px 32px 60px 32px !important;
+        margin-top: 40px !important;
+    }
+
+    .img-bg-right-about {
+        max-height: 264px !important;
+    }
+
+    .btn-take-part {
+        background-color: #542FDF !important;
+        color: white !important;
+        border-radius: 9px !important;
+        height: 71px !important;
+        width: 80% !important;
+        font-size: 18px !important;
+        margin-top: 80px !important;
+    }
+
+    .bg-make-yout-registration {
+        background-color: #542FDF !important;
+        height: fit-content !important;
+        margin-top: 100px !important;
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+
+}
+}
+
+
+@media (max-width: 400px) {
+    // TOOLS
+    .row-why{
+        display: block !important;
+    }
+    .col-why{
+        max-width: 100% !important;
+        margin-top: 1.5rem;
+    }   
+}

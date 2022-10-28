@@ -1,0 +1,29 @@
+.checkbox-round {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    vertical-align: middle;
+    border: 1px solid #3D4FF4;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.checkbox-round-center {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round-center:checked {
+    margin-bottom: 3px;
+    width: 8px;
+    height: 13px;
+    border: solid #3D4FF4;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
