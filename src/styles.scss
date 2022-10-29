@@ -265,9 +265,11 @@ input:focus {
 .negative-top-70 {
     top: -70px;
 }
-.right-0{
+
+.right-0 {
     right: 0;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
     background: black;
@@ -290,7 +292,8 @@ input:focus {
     font-size: 20px !important;
     color: white;
 }
-.d-none{
+
+.d-none {
     display: none;
 }
 
@@ -317,9 +320,10 @@ input:focus {
 
     // tools
 
-    .pop-up{
+    .pop-up {
         display: none;
     }
+
     .row-process-sub {
         background: #542FDF;
         height: 1104px;
@@ -330,24 +334,28 @@ input:focus {
     }
 
 
-    .row-swiper-desktop{
+    .row-swiper-desktop {
         display: none !important;
 
     }
-    .row-swiper-mobile{
+
+    .row-swiper-mobile {
         display: block !important;
 
     }
-    .card-swiper{
+
+    .card-swiper {
         height: 450px;
     }
-    .img-face-guy-swipper{
+
+    .img-face-guy-swipper {
         position: absolute;
         right: 39px;
         top: -100px;
         z-index: 10;
         max-width: 157px;
     }
+
     .swiper-button-prev,
     .swiper-button-next {
         background: white;
@@ -375,7 +383,8 @@ input:focus {
         height: 600px;
         margin-top: 10rem;
     }
-    .bg-swiper-page{
+
+    .bg-swiper-page {
         height: 800px;
     }
 
@@ -514,17 +523,19 @@ input:focus {
         padding-top: 100px !important;
         padding-bottom: 100px !important;
 
-}
+    }
 }
 
 
 @media (max-width: 400px) {
+
     // TOOLS
-    .row-why{
+    .row-why {
         display: block !important;
     }
-    .col-why{
+
+    .col-why {
         max-width: 100% !important;
         margin-top: 1.5rem;
-    }   
+    }
 }
