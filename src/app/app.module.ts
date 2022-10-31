@@ -17,6 +17,10 @@ import { SeePartnerComponent } from './landing-page/see-partner/see-partner.comp
 import { ProcessSubComponent } from './landing-page/process-sub/process-sub.component';
 import { WhyPartnerComponent } from './landing-page/why-partner/why-partner.component';
 import { CardSwiperComponent } from './landing-page/card-swiper/card-swiper.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -35,13 +39,18 @@ import { CardSwiperComponent } from './landing-page/card-swiper/card-swiper.comp
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     NgxMaskModule.forRoot(),
+    ToastrModule.forRoot(),
     NgxPageScrollCoreModule,
     NgxPageScrollModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
