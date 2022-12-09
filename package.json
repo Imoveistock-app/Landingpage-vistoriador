@@ -23,6 +23,8 @@
     "ngx-mask": "^13.1.15",
     "ngx-page-scroll": "^8.0.0",
     "ngx-page-scroll-core": "^8.0.0",
+    "ngx-toastr": "^14.3.0",
+    "crypto-js": "^4.1.1",
     "rxjs": "~7.5.0",
     "swiper": "^8.4.4",
     "tslib": "^2.3.0",
