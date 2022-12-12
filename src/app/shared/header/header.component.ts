@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UserRegisterRequestDto } from '../../dtos/user-register-request.dto';
 import { UserService } from '../../services/user.service';
 import { ToastrService } from 'ngx-toastr';
+import {ProfileService} from "../../services/profile.service";
 
 @Component({
   selector: 'app-header',
@@ -13,12 +14,14 @@ export class HeaderComponent implements OnInit {
 
   form: FormGroup;
 
-  request?: UserRegisterRequestDto;
+  request!: UserRegisterRequestDto;
 
+  response: any;
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
-    private toastrService: ToastrService
+    private toastrService: ToastrService,
+    private profileService: ProfileService
   ) {
     this.form = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -30,6 +33,16 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.profileService.list().subscribe(
+      success => {
+        for (let i = 0; i < success.length; i++) {
+          if (success[i].name === 'indicacao') {
+            this.response = success[i]._id
+          }
+        }
+      },
+      error => { console.log(error) }
+    )
   }
 
   submit() {
@@ -41,7 +54,7 @@ export class HeaderComponent implements OnInit {
       email: this.form.controls['email'].value,
       name: this.form.controls['name'].value,
       phone: `+55${this.form.controls['phone'].value}`,
-      profileId: 'fc68f468-9b93-4486-a92c-8d096f698987'
+      profileId: this.response
     }
 
     this.userService.register(this.request).subscribe(
