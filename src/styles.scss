@@ -17,6 +17,10 @@
     width: 6px;
     height: 6px;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 ::-webkit-scrollbar-track {
     background: white;
