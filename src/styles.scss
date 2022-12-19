@@ -17,6 +17,10 @@
     width: 6px;
     height: 6px;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 ::-webkit-scrollbar-track {
     background: white;
@@ -187,6 +191,7 @@ input:focus {
 // tool´S
 .img-partner-mobile {
     display: none !important;
+  margin-top: 10px!important;
 }
 
 .text-align-center {
@@ -246,6 +251,7 @@ input:focus {
     background-size: cover !important;
     height: 650px;
     background-repeat: no-repeat !important;
+  margin-top: 50px!important;
 }
 
 .img-guy-swippe {
@@ -353,7 +359,7 @@ input:focus {
     .img-face-guy-swipper {
         position: absolute;
         right: 39px;
-        top: -100px;
+        top: -150px;
         z-index: 10;
         max-width: 157px;
     }
