@@ -17,9 +17,11 @@
     width: 6px;
     height: 6px;
 }
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-track {
@@ -60,12 +62,16 @@ input:focus {
     height: 117px !important;
 }
 
+.d-grid {
+    display: grid;
+}
+
 .bg-header {
     background-image: url(./assets/image/img-header.png) !important;
-  background-position: left !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  height: 87vh !important;
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 870px !important;
 }
 
 .navbarCustom {
@@ -191,7 +197,7 @@ input:focus {
 // tool´S
 .img-partner-mobile {
     display: none !important;
-  margin-top: 10px!important;
+    margin-top: 10px !important;
 }
 
 .text-align-center {
@@ -251,7 +257,7 @@ input:focus {
     background-size: cover !important;
     height: 650px;
     background-repeat: no-repeat !important;
-  margin-top: 50px!important;
+    margin-top: 50px !important;
 }
 
 .img-guy-swippe {
