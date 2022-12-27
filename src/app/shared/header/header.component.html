@@ -45,7 +45,7 @@
                       </div>
                     </label>
 <!--                    <button type="submit" disabled class="btn btn-submit-register" >Em breve</button>-->
-                    <button type="submit" class="btn btn-submit-register" data-toggle="modal" data-target="#modalComfirm" > Cadastrar</button>
+                    <button type="submit" class="btn btn-submit-register" [disabled]="form.invalid" data-toggle="modal" data-target="#modalComfirm" > Cadastrar</button>
                   </form>
                 </div>
             </div>
