@@ -21,7 +21,37 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/user.service';
+import { TermComponent } from './shared/term/term.component';
+import {NgcCookieConsentConfig, NgcCookieConsentModule} from "ngx-cookieconsent";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { CookiesComponent } from './shared/cookies/cookies.component';
 
+const cookieConfig:NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'localhost'
+  },
+  palette: {
+    popup: {
+      background: '#000000'
+
+    },
+    button: {
+      background: '#01FF5F',
+      border: `#000000`,
+      text: `#000000`,
+    }
+  },
+  theme: 'edgeless',
+  type: 'opt-out',
+  content:{
+    message: 'Nossa plataforma utiliza cookies para otimizar e personalizar sua experiência. Ao continuar navegando, você automaticamente concorda com a nossa',
+
+    link: 'Política de cookies',
+    href: 'http://localhost:4200/cookie-policy',
+    allow: `Aceitar cookies`,
+    deny: `Não aceitar`,
+  }
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +63,9 @@ import { UserService } from './services/user.service';
     SeePartnerComponent,
     ProcessSubComponent,
     WhyPartnerComponent,
-    CardSwiperComponent
+    CardSwiperComponent,
+    TermComponent,
+    CookiesComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +77,8 @@ import { UserService } from './services/user.service';
     NgxMaskModule.forRoot(),
     ToastrModule.forRoot(),
     NgxPageScrollCoreModule,
+    NgcCookieConsentModule.forRoot(cookieConfig),
+    NgbModule,
     NgxPageScrollModule,
     HttpClientModule
   ],
