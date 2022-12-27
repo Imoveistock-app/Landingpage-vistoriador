@@ -1,7 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import {LandingPageComponent} from "./landing-page/landing-page.component";
+import {CookiesComponent} from "./shared/cookies/cookies.component";
+const routes: Routes = [
+  {
+    path: '',
+    component: LandingPageComponent
+  },
+  {
+    path: 'cookie-policy',
+    component: CookiesComponent
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

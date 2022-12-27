@@ -38,8 +38,8 @@
                             <input type="checkbox" formControlName="termsAndPolicy" id="1" [value]="false"
                                    class="checkbox-round-center" />
                           </div>
-                          <p class="">Estou de acordo com os <a href="" style="color: #542FDF;">Termos de Uso
-                          </a>e ciente da <a href="" style="color: #542FDF;">Política de Privacidade</a>
+                          <p class="">Estou de acordo com os <a (click)="openTermsModal('termos')" style="color: #542FDF;">Termos de Uso
+                          </a>e ciente da <a (click)="openTermsModal('politica')" style="color: #542FDF;">Política de Privacidade</a>
                             da imoveistock</p>
                         </div>
                       </div>

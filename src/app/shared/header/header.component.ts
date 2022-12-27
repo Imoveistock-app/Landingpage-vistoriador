@@ -4,6 +4,8 @@ import { UserRegisterRequestDto } from '../../dtos/user-register-request.dto';
 import { UserService } from '../../services/user.service';
 import { ToastrService } from 'ngx-toastr';
 import {ProfileService} from "../../services/profile.service";
+import {TermComponent} from "../term/term.component";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-header',
@@ -21,7 +23,8 @@ export class HeaderComponent implements OnInit {
     private formBuilder: FormBuilder,
     private userService: UserService,
     private toastrService: ToastrService,
-    private profileService: ProfileService
+    private profileService: ProfileService,
+    private modalService: NgbModal
   ) {
     this.form = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -67,8 +70,10 @@ export class HeaderComponent implements OnInit {
         console.log(error)
       }
     )
-
-
+  }
+  openTermsModal(value: string){
+    this.userService.termsOrPolitic = value;
+    this.modalService.open(TermComponent,{size:"lg"})
   }
 
 }
