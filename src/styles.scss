@@ -89,7 +89,7 @@ input:focus {
 .line-62 {
     line-height: 62px !important;
   }
-  
+
 
 .bg-header {
     background-image: url(./assets/image/img-header.png) !important;
@@ -355,7 +355,9 @@ input:focus {
 }
 
 
-
+.max-w-1700{
+    max-width: 1700px;
+}
 .bg-about-page {
     background-image: url(./assets/image/bg-about.png);
     background-position: center;
@@ -363,7 +365,9 @@ input:focus {
     background-size: cover;
     height: 686px;
   }
-  
+  .bg-about{
+    background-color: #F0F1F3;
+  }
   .title-about {
     padding: 4%;
     background-color: #542FDF;
@@ -397,6 +401,7 @@ input:focus {
     .w-full {
       flex: 0 0 auto !important;
       width: 100% !important;
+      max-width: 100% !important;
     }
   
     .k-logo {
