@@ -48,7 +48,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     message: 'Nossa plataforma utiliza cookies para otimizar e personalizar sua experiência. Ao continuar navegando, você automaticamente concorda com a nossa',
 
     link: 'Política de cookies',
-    href: 'http://localhost:4200/cookie-policy',
+    href: 'cookie-policy',
     allow: `Aceitar cookies`,
     deny: `Não aceitar`,
   }
