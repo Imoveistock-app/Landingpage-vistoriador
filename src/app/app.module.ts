@@ -25,6 +25,7 @@ import { TermComponent } from './shared/term/term.component';
 import {NgcCookieConsentConfig, NgcCookieConsentModule} from "ngx-cookieconsent";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { CookiesComponent } from './shared/cookies/cookies.component';
+import { AboutComponent } from './landing-page/about/about.component';
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
@@ -65,7 +66,8 @@ const cookieConfig:NgcCookieConsentConfig = {
     WhyPartnerComponent,
     CardSwiperComponent,
     TermComponent,
-    CookiesComponent
+    CookiesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
