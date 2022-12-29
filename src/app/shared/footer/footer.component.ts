@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {UserService} from "../../services/user.service";
+import {TermComponent} from "../term/term.component";
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   year: number = new Date().getFullYear();
-  constructor() { }
+  constructor(
+    private router: Router,
+    private modalService: NgbModal,
+    private userService: UserService
+  ) { }
 
   ngOnInit(): void {
   }
@@ -18,6 +26,15 @@ export class FooterComponent implements OnInit {
       behavior: 'smooth'
     });
 
+  }
+
+  openTermsModal(value: string){
+    this.userService.termsOrPolitic = value;
+    this.modalService.open(TermComponent,{size:"lg"})
+  }
+
+  cookies() {
+    this.router.navigate(['cookie-policy']);
   }
 
 }

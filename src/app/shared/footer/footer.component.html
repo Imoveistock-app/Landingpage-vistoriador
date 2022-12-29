@@ -33,13 +33,13 @@
     </div>
     <div class="div-line-footer"></div>
     <div class="col-lg-3">
-      <p class="my-lg-4 mt-3">Política de privacidade</p>
+      <p class="my-lg-4 mt-3" (click)="openTermsModal('politica')">Política de privacidade</p>
     </div>
     <div class="col-lg-3">
-      <p class="my-lg-4 mt-3">Termos e condições de uso</p>
+      <p class="my-lg-4 mt-3" (click)="openTermsModal('termos')">Termos e condições de uso</p>
     </div>
     <div class="col-lg-3">
-      <p class="my-lg-4 mt-3">Políticas de cookies</p>
+      <p class="my-lg-4 mt-3" (click)="cookies()">Políticas de cookies</p>
     </div>
     <div class="col-lg-3 d-flex justify-content-between">
       <img src="../../../assets/icons/top.png" (click)="goTop()" class="h-fit logo-footer" style="display:none;"/>
