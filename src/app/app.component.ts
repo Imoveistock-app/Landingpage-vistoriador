@@ -4,14 +4,14 @@ import {  NgcCookieConsentService,
   NgcInitializingEvent, NgcNoCookieLawEvent,
   NgcStatusChangeEvent} from "ngx-cookieconsent";
 import {Subscription} from "rxjs";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'landing-page-proprietario1';
-
+  title = 'imoveistock Vistoriador';
   private popupOpenSubscription!: Subscription;
   private popupCloseSubscription!: Subscription;
   private initializingSubscription!: Subscription;
@@ -24,7 +24,6 @@ export class AppComponent {
   ) {
   }
   ngOnInit(){
-    // subscribe to cookieconsent observables to react to main events
     this.popupOpenSubscription = this.ngCookieService.popupOpen$.subscribe(
       () => {
         this.ngCookieService.init(this.ngCookieService.getConfig())
@@ -75,4 +74,5 @@ export class AppComponent {
     this.revokeChoiceSubscription.unsubscribe();
     this.noCookieLawSubscription.unsubscribe();
   }
+
 }
