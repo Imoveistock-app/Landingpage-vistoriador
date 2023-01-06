@@ -29,12 +29,11 @@ import { AboutComponent } from './landing-page/about/about.component';
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
-    domain: 'localhost'
+    domain: 'imoveistock.com.br'
   },
   palette: {
     popup: {
       background: '#000000'
-
     },
     button: {
       background: '#01FF5F',
@@ -42,16 +41,14 @@ const cookieConfig:NgcCookieConsentConfig = {
       text: `#000000`,
     }
   },
-  theme: 'edgeless',
-  type: 'opt-out',
+  theme: 'classic',
+  type: 'info',
   content:{
     message: 'Nossa plataforma utiliza cookies para otimizar e personalizar sua experiência. Ao continuar navegando, você automaticamente concorda com a nossa',
-
     link: 'Política de cookies',
     href: 'cookie-policy',
-    allow: `Aceitar cookies`,
-    deny: `Não aceitar`,
-  }
+    dismiss:'Aceitar cookies',
+  },
 };
 @NgModule({
   declarations: [
