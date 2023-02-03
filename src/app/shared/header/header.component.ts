@@ -6,6 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 import {ProfileService} from "../../services/profile.service";
 import {TermComponent} from "../term/term.component";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {ProfileClientEnum} from "../../dtos/enum/profile-client.enum";
 
 @Component({
   selector: 'app-header',
@@ -36,16 +37,6 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.profileService.list().subscribe(
-      success => {
-        for (let i = 0; i < success.length; i++) {
-          if (success[i].name === 'indicacao') {
-            this.response = success[i]._id
-          }
-        }
-      },
-      error => { console.log(error) }
-    )
   }
 
   submit() {
@@ -57,7 +48,7 @@ export class HeaderComponent implements OnInit {
       email: this.form.controls['email'].value,
       name: this.form.controls['name'].value,
       phone: `+55${this.form.controls['phone'].value}`,
-      profileId: this.response
+      profilesIds: [ProfileClientEnum.indicacao, ProfileClientEnum.proprietario]
     }
 
     this.userService.register(this.request).subscribe(

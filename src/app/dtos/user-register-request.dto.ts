@@ -3,5 +3,5 @@ export abstract class UserRegisterRequestDto {
     email!: string;
     phone!: string;
     cpf!: string;
-    profileId!: string;
+    profilesIds!: string[] ;
 }
