@@ -73,6 +73,9 @@ input:focus {
     height: 117px !important;
 }
 
+.space-mobile {
+  margin-top: 30px !important;
+}
 .d-grid {
     display: grid;
 }
@@ -85,7 +88,7 @@ input:focus {
 .font-size-64 {
     font-size: 64px;
   }
-  
+
 .line-62 {
     line-height: 62px !important;
   }
@@ -375,7 +378,7 @@ input:focus {
     left: 8%;
     z-index: 10;
   }
-  
+
   .card-img-about {
     position: absolute;
     width: auto;
@@ -384,31 +387,31 @@ input:focus {
     max-height: 665px;
     z-index: 1;
   }
-  
-  
+
+
   .k-logo {
     max-height: 665px;
     width: auto;
   }
-  
-  
-  
+
+
+
   @media (max-width: 1350px) {
     .block {
       display: block !important;
     }
-  
+
     .w-full {
       flex: 0 0 auto !important;
       width: 100% !important;
       max-width: 100% !important;
     }
-  
+
     .k-logo {
       width: auto !important;
       height: auto !important;
     }
-  
+
     .card-img-about {
       position: relative;
       width: auto;
@@ -416,19 +419,19 @@ input:focus {
       bottom: 163px;
       max-height: 665px;
     }
-  
+
     .card-img-office {
       width: 100%;
     }
-  
+
     .col-office {
       text-align: center !important;
       height: fit-content !important;
     }
-  
-  
+
+
   }
-  
+
 
 
 @media (max-width: 991px) {
@@ -639,7 +642,7 @@ input:focus {
         padding-bottom: 100px !important;
 
     }
-    
+
   .k-logo {
     width: 100% !important;
     height: auto !important;
