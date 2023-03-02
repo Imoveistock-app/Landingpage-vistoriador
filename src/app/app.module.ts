@@ -29,7 +29,7 @@ import { AboutComponent } from './landing-page/about/about.component';
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
-    domain: 'imoveistock.com.br'
+    domain: window.location.hostname
   },
   palette: {
     popup: {
