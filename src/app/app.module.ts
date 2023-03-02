@@ -29,7 +29,7 @@ import { AboutComponent } from './landing-page/about/about.component';
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
-    domain: 'localhost'
+    domain: window.location.hostname
   },
   palette: {
     popup: {
