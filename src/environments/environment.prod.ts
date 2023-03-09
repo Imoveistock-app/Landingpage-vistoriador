@@ -4,5 +4,11 @@ export const environment = {
   apis: {
     imoveistock: 'https://imoveistockapi.tgtdigital.io/',
     // imoveistock: 'http://localhost:3000/',
+  },
+  redirect: {
+    link: 'https://imoveistock-kjeth28zd-tgt.vercel.app/',
+    linkComplement: '/auth/login-or-register',
+    vitrine: `https://vitrine-imoveistock-qtdghwc2x-tgt.vercel.app/`
   }
+
 };
