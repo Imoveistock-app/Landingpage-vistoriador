@@ -31,6 +31,7 @@ export class HeaderComponent implements OnInit {
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       cpf: ['', [Validators.required]],
+      addressZipCode: ['', [Validators.required]],
       phone: ['', [Validators.required]],
       termsAndPolicy: ['', [Validators.requiredTrue]]
     })
@@ -47,6 +48,7 @@ export class HeaderComponent implements OnInit {
       cpf: cpf,
       email: this.form.controls['email'].value,
       name: this.form.controls['name'].value,
+      addressZipCode: this.form.controls['addressZipCode'].value,
       phone: `+55${this.form.controls['phone'].value}`,
       profilesIds: [ProfileClientEnum.indicacao, ProfileClientEnum.proprietario]
     }
