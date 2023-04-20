@@ -1,0 +1,19 @@
+#btn-conhecer {
+  background-color: transparent;
+  border: 2px solid #542FDF;
+  color: #542FDF;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#btn-conhecer:hover {
+  background-color: #542FDF;
+  color: white;
+}
