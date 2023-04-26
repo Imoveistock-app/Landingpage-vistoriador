@@ -394,7 +394,10 @@ input:focus {
     width: auto;
   }
 
-
+.cursor-underline:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
   @media (max-width: 1350px) {
     .block {
