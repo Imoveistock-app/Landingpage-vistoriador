@@ -37,11 +37,11 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  goLogin(){
-    window.location.href = environment.redirect.link+'/auth/login-or-register';
+  knowApp() {
+    window.open('https://imoveistock-app-tgt.vercel.app', '_blank')
   }
 
   goVitrine(){
-    window.open(environment.redirect.vitrine, '_blank');
+    window.open('https://vitrine-imoveistock-tgt.vercel.app/', '_blank');
   }
 }
