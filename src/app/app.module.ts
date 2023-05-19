@@ -26,6 +26,7 @@ import {NgcCookieConsentConfig, NgcCookieConsentModule} from "ngx-cookieconsent"
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { CookiesComponent } from './shared/cookies/cookies.component';
 import { AboutComponent } from './landing-page/about/about.component';
+import { RedirectAppModalComponent } from './shared/header/redirect-app-modal/redirect-app-modal.component';
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
@@ -64,7 +65,8 @@ const cookieConfig:NgcCookieConsentConfig = {
     CardSwiperComponent,
     TermComponent,
     CookiesComponent,
-    AboutComponent
+    AboutComponent,
+    RedirectAppModalComponent
   ],
   imports: [
     BrowserModule,
