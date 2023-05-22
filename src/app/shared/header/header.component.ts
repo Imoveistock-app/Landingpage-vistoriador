@@ -63,7 +63,7 @@ export class HeaderComponent implements OnInit {
         this.form.reset();
       },
       error => {
-        this.toastrService.error('Erro ao cadastrar usuário', '', { progressBar: true });
+        this.toastrService.error(`${error.error.errors}`, '', { progressBar: true });
         console.log(error)
       }
     )
