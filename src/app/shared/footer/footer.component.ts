@@ -37,4 +37,17 @@ export class FooterComponent implements OnInit {
     this.router.navigate(['cookie-policy']);
   }
 
+  goToFacebook() {
+    window.open('https://www.facebook.com/imoveistock', '_blank')
+  }
+  goToInstagram() {
+    window.open('https://www.instagram.com/imoveistock/', '_blank')
+  }
+  goToLinkedin() {
+    window.open('https://www.linkedin.com/company/imoveistock/', '_blank')
+  }
+  goToYoutube() {
+    window.open('https://www.youtube.com/@imoveistock5198', '_blank')
+  }
+
 }
