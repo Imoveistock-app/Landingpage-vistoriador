@@ -38,10 +38,10 @@ export class NavbarComponent implements OnInit {
   }
 
   knowApp() {
-    window.open('https://imoveistock-app-tgt.vercel.app', '_blank')
+    window.open('https://app.imoveistock.com.br/', '_blank')
   }
 
   goVitrine(){
-    window.open('https://vitrine-imoveistock-tgt.vercel.app/', '_blank');
+    window.open('https://www.imoveistock.com.br/', '_blank');
   }
 }
